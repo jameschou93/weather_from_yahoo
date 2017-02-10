@@ -1,0 +1,8 @@
+<h1>input city and state</h1>
+
+<%= form_tag "/weather", method: :get do %>
+  City: <input type="text" name="city">
+  State: <input type="text" name="state">
+  <input type="submit" value="Weather Now">
+
+<% end %>

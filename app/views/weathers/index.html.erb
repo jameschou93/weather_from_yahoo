@@ -1,0 +1,13 @@
+<h1><%= params[:city] %> <%= params[:state] %></h1>
+
+<% @fiveday.each do |day| %>
+
+<p><%= day["day"] %></p>
+<p><%= day["high"] %></p>
+<p><%= day["low"] %></p>
+<p><%= day["text"] %></p>
+<br>
+<% end %>
+<button>
+<%= link_to "Search Your Location", "/weather/search" %>
+</button>
